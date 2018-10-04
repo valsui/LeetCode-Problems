@@ -34,7 +34,7 @@ const optimalSchedule = (jobs) => {
 }
 
 const conflict = (job1, job2) => {
-    if(job1[1] < job2[0]){
+    if(job1[1] <= job2[0]){
         return false;
     }else{
         return true;
